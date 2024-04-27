@@ -1,0 +1,4 @@
+.searchBoxLabel {
+    display: flex;
+    flex-direction: column;
+}
