@@ -4,7 +4,7 @@ import styles from "./SearchBox.module.css";
 
 const SearchBox = () => {
     const dispatch = useDispatch();
-    const selectNameFilter = useSelector((state) => state.filters.name);
+    const filter = useSelector((state) => state.filter);
 
     const onChangeFilter = (event) => {
         dispatch(changeFilter(event.target.value));
@@ -16,7 +16,7 @@ const SearchBox = () => {
             <input
                 className={styles.searchBoxInput}
                 type="text"
-                value={selectNameFilter}
+                value={filter}
                 onChange={onChangeFilter}
                 placeholder="Search contacts"
             />

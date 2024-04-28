@@ -54,6 +54,7 @@ const ContactForm = () => {
                         className={styles.contactFormInput}
                         type="tel"
                         name="number"
+                        placeholder="+380"
                     />
                     <ErrorMessage name="number" component="div" className={styles.errorMessage} />
                 </label>
